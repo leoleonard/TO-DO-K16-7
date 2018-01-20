@@ -19,7 +19,7 @@ class App extends React.Component {
             id: 3,
                 text: 'feed my cat'
             }]
-        };
+        }
     }
     addTodo(val){
         const todo = {
@@ -38,9 +38,11 @@ class App extends React.Component {
 
     render() {
         return (
-            <div className={style.TodoApp}>
-                Tutaj pojawią się komponenty naszej aplikacji.
-            </div>
+          <div className={style.TodoApp}>
+              <Title title={this.state.title}/>
+              <TodoList data={this.state.data} remove={this.removeTodo.bind(this)}/>
+                Lista
+          </div>
         );
     }
 

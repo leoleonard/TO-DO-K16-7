@@ -8313,7 +8313,9 @@ var App = function (_React$Component) {
             return _react2.default.createElement(
                 'div',
                 { className: _App2.default.TodoApp },
-                'Tutaj pojawi\u0105 si\u0119 komponenty naszej aplikacji.'
+                _react2.default.createElement(_Title2.default, { title: this.state.title }),
+                _react2.default.createElement(_TodoList2.default, { data: this.state.date, remove: this.removeTodo.bind(this) }),
+                'pojawi\u0105 si\u0119 komponenty naszej aplikacji.'
             );
         }
     }]);
