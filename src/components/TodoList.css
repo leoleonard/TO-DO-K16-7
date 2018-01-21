@@ -1,0 +1,9 @@
+.TodoList {
+padding: 20px;
+}
+
+
+.TodoList li {
+  padding: 5px 10px;
+  cursor: pointer;
+}
