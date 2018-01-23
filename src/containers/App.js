@@ -44,6 +44,7 @@ class App extends React.Component {
         return (
           <div className={style.TodoApp}>
               <Title title={this.state.title}/>
+              <TodoForm refer={this}/>
               <TodoList data={this.state.data} remove={this.removeTodo.bind(this)}/>
 
           </div>
